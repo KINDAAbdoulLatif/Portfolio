@@ -89,7 +89,7 @@ const SIDE_PROJECTS = [
         Logo: MessageCircle,
         title: "Buttons Maker",
         description: "Made with React, you can create buttons and copy the code ",
-        url: "https://example.com"
+        url: "https://github.com/KINDAAbdoulLatif/Button_Maker"
     },
     {
         Logo: Weight,
