@@ -12,7 +12,7 @@ const AnekTelugu = Anek_Telugu({
 
 export const metadata: Metadata = {
   title: "KINDA ABDOUL LATIF . Software Engineer",
-  description: "Portfolio de KINDA ABDOUL LATIF",
+  description: "Portfolio  KINDA ABDOUL LATIF",
 };
 
 export default function RootLayout({
