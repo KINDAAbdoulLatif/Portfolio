@@ -12,7 +12,7 @@ import { SideProject } from "./SideProject";
 export const Status = ()=> {
     return (
         <Section className="flex max-md:flex-col items-start gap-4"> 
-            <Card className="flex-[3]  flex flex-col  w-full pl-2 py-2">
+            <Card className="flex-[3]  flex flex-col  w-full pl-2 py-7">
                 <p className=" text-lg text-muted-foreground">Side Projects</p>
                 <div className="flex flex-col gap-4">
                 {SIDE_PROJECTS.map((project, index)=>(
@@ -29,9 +29,10 @@ export const Status = ()=> {
             </Card>
             <div className="flex-[2] flex flex-col ml-auto w-full ">
                 <Card className="p-4 flex-1 mb-2">
-                <p className=" text-lg text-muted-foreground">Works</p>
+                <p className=" text-lg text-muted-foreground">Associations</p>
 
-                    <div className="flex flex-col gap-4">
+                    <div 
+                    className="flex flex-col gap-4">
                         {WORKS.map((project, index)=>(
                             <Work 
                             key={index}
@@ -92,25 +93,25 @@ const SIDE_PROJECTS = [
     },
     {
         Logo: Weight,
-        title: "CodeLine",
-        description: "A platform Lorem ipsum dolor sit amet. ",
-        url: "https://example.com"
+        title: "Portfolio",
+        description: "A portfolio made with NextJs ",
+        url: "https://github.com/KINDAAbdoulLatif/Portfolio"
     },
 ]
 const WORKS = [
     {
-        image: "data:image/png;base64,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",
-        title: "CodeSphere",
-        role: "Funder",
-        date: "2023- Present",
-        url: "https://example.com"
+        image: "https://media.licdn.com/dms/image/D4E0BAQFzHWP6eUmZDg/company-logo_100_100/0/1702667432224/association_des_etudiants_et_stagiaires_burkinab_au_maroc_logo?e=1730937600&v=beta&t=J80MDP4Vsn1aPHUUCaChrHJXEEaXFsSwN-cKakAUZN0",
+        title: "AEBM",
+        role: "Member",
+        date: "October 2021- Present",
+        url: "https://www.linkedin.com/company/association-des-etudiants-et-stagiaires-burkinab%C3%A9-au-maroc/posts/?feedView=all"
     },
     {
-        image: "data:image/png;base64,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",
-        title: "CodeSphere",
-        role: "Funder",
-        date: "2023- Present",
-        url: "https://example.com"
+        image: "https://media.licdn.com/dms/image/D4E0BAQE1F2VTFC1xlQ/company-logo_200_200/0/1682937260207?e=1730937600&v=beta&t=KxLOx2W_10kwuy8RtPABM6RE4K-CGFzlbI_FYt8tZnM",
+        title: "AJPD-BF",
+        role: "Member",
+        date: "July 2024- Present",
+        url: "https://www.linkedin.com/company/ajpd-bf/posts/?feedView=all"
     },
 ]
 

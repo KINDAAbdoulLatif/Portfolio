@@ -13,9 +13,9 @@ export const ContactCard = (props: {
       url?: string
     })=>{
         return (
-            <Card className="p-3 bg-accent/10 ">
+            <Card className={`p-3 bg-accent/10 ${props.className}`}>
                 <div className="relative">
-                    <img src={props.image} alt={props.name} className= {props.className} />
+                    <img src={props.image} alt={props.name} className= "w-24" />
                     <img src={props.mediumImage} alt={props.name} 
                     className="w-4 h-4 absolute -bottom-2 -right-2" />
                 </div>
